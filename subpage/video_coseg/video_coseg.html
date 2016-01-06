@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>RGBD co-segmentation</title>
+
+    <link rel="stylesheet" href="../../stylesheets/styles.css">
+    <link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Huazhu Fu</h1>
+<p>
+<small>huazhufu (AT) gmail (DOT) com </small><br><br>
+<a href="https://github.com/HzFu" target="_blank">[GitHub]</a>  
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Huazhu" target="_blank">[DBLP]</a>  <br>
+<a href="http://scholar.google.com.sg/citations?user=jCvUBYMAAAAJ" target="_blank">[Google Scholar]</a> </p> <br>
+        <p class="view"><a href="../../index.html">Homepage: </a></p>
+        <p class="view"><a href="../publication.html">Publications: </a></p>
+        <p class="view"><a href="../projects.html">Projects: <br>
+        </p>
+      </header>
+
+      <section>
+
+<h2>
+<a id="project_title" class="anchor" href="#project_title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Object-based Video Co-segmentation</h2>
+
+
+
+
+<h4>
+<a id="Introduction-page" class="anchor" href="#Introduction-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction:</h4>
+
+<p>We present a video co-segmentation method that uses category-independent object proposals as its basic element and can extract multiple foreground objects in a video set. The use of object elements overcomes limitations of low-level feature representations in separating complex foregrounds and backgrounds. We formulate object-based co-segmentation as a co-selection graph in which regions with foreground-like characteristics are favored while also accounting for intra-video and inter-video foreground coherence. To handle multiple foreground objects, we expand the co-selection graph model into a proposed multi-state selection graph model (MSG) that optimizes the segmentations of different objects jointly. This extension into the MSG can be applied not only to our co-selection graph, but also can be used to turn any standard graph model into a multi-state selection solution that can be optimized directly by the existing energy minimization techniques. Our experiments show that our object-based multiple foreground video co-segmentation method (ObMiC) compares well to related techniques on both single and multiple foreground cases.</p>
+
+<div style="text-align: center; display: block; margin-right: auto;">
+<img src="framework.jpg" border="0" width="600"><br></div><br>
+
+
+
+<h4>Paper:</h4>
+    
+<p>[1] <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Fu_Object-based_Multiple_Foreground_2014_CVPR_paper.html" target="_blank"><strong>"Object-based Multiple Foreground Video Co-segmentation"</strong></a><br>
+<strong>Huazhu Fu</strong>, Dong Xu, Bao Zhang, Stephen Lin, <br>
+in <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2014, pp. 3166-3173. <br>
+</p>
+
+<p>[2] <a href="../../paper/2015-TIP-VideoCoseg.pdf" target="_blank"><strong>"Object-based Multiple Foreground Video Co-segmentation via Multi-state Selection Graph"</strong></a><br> 
+<strong>Huazhu Fu</strong>, Dong Xu, Bao Zhang, Stephen Lin, Rabab K. Ward,<br>
+<em>IEEE Transactions on Image Processing (TIP)</em>, vol. 24, no. 11, pp. 3415-3424, 2015. <br>
+[<a href="https://github.com/HzFu/VideoCoSeg_MSG" target="_blank"><font color="#ff0000">Code</font></a>] [<a href="https://sites.google.com/site/huazhufu/home/VidCoSeg" target="_blank"><font color="#ff0000">Project</font></a>] </p>
+
+
+<h4>Dataset and Code:</h4>
+<p> We biuld a <a href="https://drive.google.com/file/d/0B4WJOyg3YxXSTkMwOXZDWWNTQ0E/view?usp=sharing" target="_blank"><font color="#ff0000">RGBD image co-segmentation dataset</font></a> (~102MB), which contains 16 image sets, each of 6 to 17 images taken from indoor scenes with one common foreground object (193 images in total).
+
+The code can be found from here: [<a href="https://github.com/HzFu/VideoCoSeg_MSG" target="_blank"><font color="#ff0000">Code</font></a>] <br>
+Our <a href="https://drive.google.com/file/d/0B4WJOyg3YxXSaHQwX08xR3RRRkk/view?usp=sharing" target="_blank"><font color="#ff0000">Dataset and Groundtruth </font></a>: (~5MB) has 8 videos (2 video in each group) including 2 objects in each video. <br>
+Other video co-segmentation dataset: <a href="https://sites.google.com/site/walonchiu/projects/cosegmentation" target="_blank"><font color="#ff0000">MOViCS (CVPR13)</font></a>.
+
+
+</p>
+
+<h4>Related Works:</h4>
+
+<p>[1] Huazhu Fu, Xiaochun Cao, Zhuowen Tu, "Cluster-based Co-saliency Detection", IEEE Transactions on Image Processing (TIP), vol. 22, no. 10, pp. 3766-3778, 2013. <br>
+
+[2] Xiaochun Cao, Zhiqiang Tao, Bao Zhang, Huazhu Fu, Wei Feng, "Self-adaptively Weighted Co-saliency Detection via Rank Constraint", IEEE Transactions on Image Processing (TIP), vol. 23, no. 9, pp. 4175-4186, 2014. <br>
+
+[3] Huazhu Fu, Dong Xu, Stephen Lin, Jiang Liu, "Object-based RGBD Image Co-segmentation with Mutex Constraint", in IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2015</p>
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="http://hzfu.github.io/">Huazhu Fu</a></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
