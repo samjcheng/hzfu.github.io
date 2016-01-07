@@ -4,7 +4,7 @@ body {
   background-color: #fff;
   padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
+  color:#000;
   font-weight:400;
 }
 ud {
@@ -15,7 +15,7 @@ ud2 {
   text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  color:#000;
   margin:0 0 20px;
 }
 
@@ -36,11 +36,11 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
+  color:#000;
 }
 
 a {
-  color:#39c;
+  color:#28c;
   text-decoration:none;
 }
 
@@ -144,7 +144,7 @@ header li:last-child a {
 header ul a {
   line-height:1;
   font-size:10px;
-  color:#999;
+  color:#28c;
   display:block;
   text-align:center;
   padding-top:6px;
