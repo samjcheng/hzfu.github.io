@@ -29,17 +29,104 @@
 <h2>
 <a id="project_title" class="anchor" href="#project_title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Object-based Video Co-segmentation</h2>
 
+<hr/>
 
-
+<div style="text-align: center; display: block; margin-right: auto;">
+<img src="framework.jpg" border="0" width="600"><br></div><br>
 
 <h4>
 <a id="Introduction-page" class="anchor" href="#Introduction-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction:</h4>
 
 <p>We present a video co-segmentation method that uses category-independent object proposals as its basic element and can extract multiple foreground objects in a video set. The use of object elements overcomes limitations of low-level feature representations in separating complex foregrounds and backgrounds. We formulate object-based co-segmentation as a co-selection graph in which regions with foreground-like characteristics are favored while also accounting for intra-video and inter-video foreground coherence. To handle multiple foreground objects, we expand the co-selection graph model into a proposed multi-state selection graph model (MSG) that optimizes the segmentations of different objects jointly. This extension into the MSG can be applied not only to our co-selection graph, but also can be used to turn any standard graph model into a multi-state selection solution that can be optimized directly by the existing energy minimization techniques. Our experiments show that our object-based multiple foreground video co-segmentation method (ObMiC) compares well to related techniques on both single and multiple foreground cases.</p>
 
-<div style="text-align: center; display: block; margin-right: auto;">
-<img src="framework.jpg" border="0" width="600"><br></div><br>
+<hr/>
 
+<h4> Performances: </h4>
+
+<p> There are two datasets used in our paper: MOViCS dataset and our Video Coseg dataset. </p>
+<table>
+1. CVPR/TIP on Video Coseg dataset:
+  <tr>
+  <th> </th>
+    <th>Dog</th>
+    <th>Person</th>
+    <th>Monster</th>
+    <th>Skating</th>
+    <th>Avg.</th>
+  </tr>
+  <tr>
+    <td>Acc</td>
+    <td>1115</td>
+    <td>9321</td>
+    <td>3551</td>
+    <td>3274</td>
+    <td>4315</td>
+  </tr>
+  <tr>
+    <td>IOU</td>
+    <td>0.753</td>
+    <td>0.542</td>
+    <td>0.795</td>
+    <td>0.666</td>
+    <td>0.689</td>
+  </tr>
+</table>
+
+<table>
+2. CVPR on MOViCS dataset (single object):
+  <tr>
+  <th> </th>
+    <th>Chicken</th>
+    <th>Giraffe</th>
+    <th>Lion</th>
+    <th>Tiger</th>
+    <th>Avg.</th>
+  </tr>
+  <tr>
+    <td>Acc</td>
+    <td>1567</td>
+    <td>2938</td>
+    <td>1598</td>
+    <td>21005</td>
+    <td>6726</td>
+  </tr>
+  <tr>
+    <td>IOU</td>
+    <td>0.872</td>
+    <td>0.668</td>
+    <td>0.828</td>
+    <td>0.714</td>
+    <td>0.771</td>
+  </tr>
+</table>
+
+<table>
+3. TIP on OViCS dataset (multi-object):
+  <tr>
+  <th> </th>
+    <th>Chicken/Turtle</th>
+    <th>Giraffe/Elephant</th>
+    <th>Lion/Zebra</th>
+    <th>Tiger</th>
+    <th>Avg.</th>
+  </tr>
+  <tr>
+    <td>Acc</td>
+    <td>2372</td>
+    <td>3396</td>
+    <td>6084</td>
+    <td>21005</td>
+    <td>8214</td>
+  </tr>
+  <tr>
+    <td>IOU</td>
+    <td>0.879</td>
+    <td>0.553</td>
+    <td>0.616</td>
+    <td>0.714</td>
+    <td>0.691</td>
+  </tr>
+</table>
 
 <hr/>
 
@@ -53,15 +140,17 @@ in <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2
 <p>[2] <a href="../../paper/2015-TIP-VideoCoseg.pdf" target="_blank"><strong>"Object-based Multiple Foreground Video Co-segmentation via Multi-state Selection Graph"</strong></a><br> 
 Huazhu Fu, Dong Xu, Bao Zhang, Stephen Lin, Rabab K. Ward,<br>
 <em>IEEE Transactions on Image Processing (TIP)</em>, vol. 24, no. 11, pp. 3415-3424, 2015. <br>
-[<a href="https://github.com/HzFu/VideoCoSeg_MSG" target="_blank"><font color="#ff0000">Code</font></a>] [<a href="video_coseg.html" target="_blank"><font color="#ff0000">Project</font></a>] </p>
+</p>
 
 <hr/>
+
+
 
 <h4>Dataset and Code:</h4>
 <p> 
 The code can be found from here: [<a href="https://github.com/HzFu/VideoCoSeg_MSG" target="_blank"><font color="#ff0000">Code</font></a>] <br>
 Our <a href="https://drive.google.com/file/d/0B4WJOyg3YxXSaHQwX08xR3RRRkk/view?usp=sharing" target="_blank"><font color="#ff0000">Dataset and Groundtruth </font></a>: (~5MB) has 8 videos (2 video in each group) including 2 objects in each video. <br>
-Other video co-segmentation dataset: <a href="https://sites.google.com/site/walonchiu/projects/cosegmentation" target="_blank"><font color="#ff0000">MOViCS (CVPR13)</font></a>.
+Other related video co-segmentation dataset: <a href="https://sites.google.com/site/walonchiu/projects/cosegmentation" target="_blank"><font color="#ff0000">MOViCS (CVPR13)</font></a>.
 </p>
 
 <hr/>
