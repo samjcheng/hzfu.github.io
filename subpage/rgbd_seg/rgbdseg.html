@@ -27,7 +27,7 @@
       <section>
 
 <h2>
-<a id="project_title" class="anchor" href="#project_title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Object-based RGBD co-segmentation</h2>
+<a id="project_title" class="anchor" href="#project_title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Object-based RGBD foreground segmentation</h2>
 
 
 
@@ -44,36 +44,28 @@
 <hr />
 <h4>Paper:</h4>
     
-<p><a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Fu_Object-Based_RGBD_Image_2015_CVPR_paper.html" target="_blank"><strong>"Object-based RGBD Image Co-segmentation with Mutex Constraint"</strong></a><br>
-Huazhu Fu, Dong Xu, Stephen Lin, Jiang Liu,<br>
-in <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2015, pp. 4428-4436. <br>
+<p>[1] Huazhu Fu, Dong Xu, Stephen Lin, Jiang Liu, <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Fu_Object-Based_RGBD_Image_2015_CVPR_paper.html" target="_blank"><strong>"Object-based RGBD Image Co-segmentation with Mutex Constraint"</strong></a> in <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2015, pp. 4428-4436. <br>
+
+[2] Huazhu Fu, Dong Xu, Stephen Lin, <strong>"Object-based Multiple Foreground Segmentation in RGBD Video"</strong>, submitted to <em>IEEE Transactions on Image Processing (TIP), 2016. <br>
 </p>
 
 <hr />
-<h4>Dataset:</h4>
-<p> We biuld a <a href="https://onedrive.live.com/redir?resid=F3A8A31ABFAC51B0!269&authkey=!AHUBN0lk5kQLWzQ&ithint=file%2czip" target="_blank"><font color="#ff0000">RGBD image co-segmentation dataset</font></a> (~102MB), which contains 16 image sets, each of 6 to 17 images taken from indoor scenes with one common foreground object (193 images in total).</p>
+<h4>RGBD image co-segmentation dataset:</h4>
+<p> We build a RGBD image co-segmentation dataset, which contains 16 image sets, each of 6 to 17 images taken from indoor scenes with one common foreground object (193 images in total): <a href="https://onedrive.live.com/redir?resid=F3A8A31ABFAC51B0!269&authkey=!AHUBN0lk5kQLWzQ&ithint=file%2czip" target="_blank"><font color="#ff0000">RGBD image co-segmentation dataset</font></a> (~102MB), <a href="https://onedrive.live.com/redir?resid=F3A8A31ABFAC51B0!255&authkey=!ANuwbADPp9Dsm4Q&ithint=file%2czip"><font color="#ff0000">our result</font></a> (~20MB).</p>
 
-<h4> Result: </h4>
-<p> The result of our method can be downloaded from: 
-[<a href="https://onedrive.live.com/redir?resid=F3A8A31ABFAC51B0!255&authkey=!ANuwbADPp9Dsm4Q&ithint=file%2czip"><font color="#ff0000">Here</font></a>]  (~20MB), which contains the RGBD co-saliency map and co-segmentation mask.
-</p>
+<h4>RGBD video foreground segmentation dataset:</h4>
+<p> We also build a RGBD video foreground segmentation dataset for journal version, which contains 12 videos, each of 20 to 56 frames with one or two foregrounds: <a href="https://1drv.ms/u/s!ArBRrL8ao6jzhlYsJ33Jq-KYZa1P" target="_blank"><font color="#ff0000">RGBD video segmentation dataset and our result</font></a> (~369MB).</p>
 
 <hr />
 <h4>Related Works:</h4>
 
-<p>[1] <a href="http://dx.doi.org/10.1109/TIP.2015.2442915" target="_blank"><strong>"Object-based Multiple Foreground Video Co-segmentation via Multi-state Selection Graph"</strong></a><br> 
-Huazhu Fu, Dong Xu, Bao Zhang, Stephen Lin, Rabab K. Ward,<br>
-<em>IEEE Transactions on Image Processing (TIP)</em>, vol. 24, no. 11, pp. 3415-3424, 2015. <br>
+<p>[1] Huazhu Fu, Dong Xu, Bao Zhang, Stephen Lin, Rabab K. Ward, <a href="http://dx.doi.org/10.1109/TIP.2015.2442915" target="_blank"><strong>"Object-based Multiple Foreground Video Co-segmentation via Multi-state Selection Graph"</strong></a>, <em>IEEE Transactions on Image Processing (TIP)</em>, vol. 24, no. 11, pp. 3415-3424, 2015.  
 [<a href="https://github.com/HzFu/VideoCoSeg_MSG" target="_blank"><font color="#ff0000">Code</font></a>] [<a href="../video_coseg/video_coseg.html" target="_blank"><font color="#ff0000">Project</font></a>] </p>
 
-<p>[2] <a href="http://dx.doi.org/10.1109%2FTIP.2013.2260166" target="_blank"><strong>"Cluster-based Co-saliency Detection"</strong></a><br>
-Huazhu Fu, Xiaochun Cao, Zhuowen Tu,<br>
-<em>IEEE Transactions on Image Processing (TIP)</em>, vol. 22, no. 10, pp. 3766-3778, 2013. <br>
+<p>[2] Huazhu Fu, Xiaochun Cao, Zhuowen Tu, <a href="http://dx.doi.org/10.1109%2FTIP.2013.2260166" target="_blank"><strong>"Cluster-based Co-saliency Detection"</strong></a>, <em>IEEE Transactions on Image Processing (TIP)</em>, vol. 22, no. 10, pp. 3766-3778, 2013.  
 [<a href="https://github.com/HzFu/Cosaliency_tip2013" target="_blank"><font color="#ff0000">Code</font></a>] </p>
 
-<p>[3] <a href="http://dx.doi.org/10.1109/TIP.2014.2332399" target="_blank"><strong>"Self-adaptively Weighted Co-saliency Detection via Rank Constraint"</strong></a><br>
-Xiaochun Cao, Zhiqiang Tao, Bao Zhang, Huazhu Fu, Wei Feng,<br>
-<em>IEEE Transactions on Image Processing (TIP)</em>, vol. 23, no. 9, pp. 4175-4186, 2014. <br>
+<p>[3] Xiaochun Cao, Zhiqiang Tao, Bao Zhang, Huazhu Fu, Wei Feng, <a href="http://dx.doi.org/10.1109/TIP.2014.2332399" target="_blank"><strong>"Self-adaptively Weighted Co-saliency Detection via Rank Constraint"</strong></a>, <em>IEEE Transactions on Image Processing (TIP)</em>, vol. 23, no. 9, pp. 4175-4186, 2014. 
 [<a href="https://github.com/HzFu/SACS_TIP2014" target="_blank"><font color="#ff0000">Code</font></a>]</p>
 
       </section>
