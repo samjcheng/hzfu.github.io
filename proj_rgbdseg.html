@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>RGBD Segmentation</title>
 
-    <link rel="stylesheet" href="../../stylesheets/styles.css">
-    <link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
   </head>
   <body>
@@ -18,10 +18,10 @@
 <a href="https://github.com/HzFu" target="_blank">[GitHub]</a>  
 <a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Huazhu" target="_blank">[DBLP]</a>  <br>
 <a href="http://scholar.google.com.sg/citations?user=jCvUBYMAAAAJ" target="_blank">[Google Scholar]</a> </p> <br>
-<p class="view"><a href="../../index.html">Homepage</a></p>
-<p class="view"><a href="../publication.html">Publications</a></p>
-<p class="view"><a href="../codes.html">Codes and Data</a></p>
-<p class="view"><a href="../projects.html">Projects</a></p>
+<p class="view"><a href="index.html">Homepage</a></p>
+<p class="view"><a href="sub_publication.html">Publications</a></p>
+<p class="view"><a href="sub_codes.html">Codes and Data</a></p>
+<p class="view"><a href="sub_projects.html">Projects</a></p>
       </header>
 
       <section>
@@ -38,7 +38,7 @@
 <p>We present an object-based co-segmentation method that takes advantage of depth data and is able to correctly handle noisy images in which the common foreground object is missing. With RGBD images, our method utilizes the depth channel to enhance identification of similar foreground objects via a proposed RGBD co-saliency map, as well as to improve detection of object-like regions and provide depth- based local features for region comparison. To accurately deal with noisy images where the common object appears more than or less than once, we formulate co-segmentation in a fully-connected graph structure together with mutual exclusion (mutex) constraints that prevent improper solutions. Experiments show that this object-based RGBD co-segmentation with mutex constraints outperforms related techniques on an RGBD co-segmentation dataset, while effectively processing noisy images. Moreover, we show that this method also provides performance comparable to state- of-the-art RGB co-segmentation techniques on regular RGB images with depth maps estimated from them.</p>
 
 <div style="text-align: center; display: block; margin-right: auto;">
-<img src="framework.jpg" border="0" width="600"><br></div><br>
+<img src="sub_img/rgbd_seg_framework.jpg" border="0" width="600"><br></div><br>
 
 
 <hr />
@@ -60,7 +60,7 @@
 <h4>Related Works:</h4>
 
 <p>[1] Huazhu Fu, Dong Xu, Bao Zhang, Stephen Lin, Rabab K. Ward, <a href="http://dx.doi.org/10.1109/TIP.2015.2442915" target="_blank"><strong>"Object-based Multiple Foreground Video Co-segmentation via Multi-state Selection Graph"</strong></a>, <em>IEEE Transactions on Image Processing (TIP)</em>, vol. 24, no. 11, pp. 3415-3424, 2015.  
-[<a href="https://github.com/HzFu/VideoCoSeg_MSG" target="_blank"><font color="#ff0000">Code</font></a>] [<a href="../video_coseg/video_coseg.html" target="_blank"><font color="#ff0000">Project</font></a>] </p>
+[<a href="https://github.com/HzFu/VideoCoSeg_MSG" target="_blank"><font color="#ff0000">Code</font></a>] [<a href="proj_video_coseg.html" target="_blank"><font color="#ff0000">Project</font></a>] </p>
 
 <p>[2] Huazhu Fu, Xiaochun Cao, Zhuowen Tu, <a href="http://dx.doi.org/10.1109%2FTIP.2013.2260166" target="_blank"><strong>"Cluster-based Co-saliency Detection"</strong></a>, <em>IEEE Transactions on Image Processing (TIP)</em>, vol. 22, no. 10, pp. 3766-3778, 2013.  
 [<a href="https://github.com/HzFu/Cosaliency_tip2013" target="_blank"><font color="#ff0000">Code</font></a>] </p>
