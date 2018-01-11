@@ -28,40 +28,57 @@
       <section>
 
 <h2>
-<a id="project_title" class="anchor" href="#project_title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Glaucoma Screening in Fundus Image</h2>
+<a id="project_title" class="anchor" href="#project_title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Glaucoma Screening from Fundus Image</h2>
 
 
+<h4>Glaucoma and CDR:</h4>
 
-
-<p>Glaucoma is a chronic eye disease that leads to irreversible vision loss. Since vision loss from glaucoma cannot be reversed, early screening and detection methods are essential to preserve vision and life quality. One major glaucoma screening technique is optic nerve head (ONH) assessment, which employs a binary classification to identify the glaucomatous and healthy subjects. However, the manual assessment by trained clinicians is time consuming and costly, and not suitable for population screening.
+<p>Glaucoma is a chronic eye disease that leads to irreversible vision loss. Since vision loss from glaucoma cannot be reversed, early screening and detection methods are essential to preserve vision and life quality. One major glaucoma screening technique is optic nerve head (ONH) assessment, which employs a binary classification to identify the glaucomatous and healthy subjects.  
 </p> <br>
 
 <div style="text-align: center; display: block; margin-right: auto;">
-<img src="sub_img/cover_CDR.jpg" border="0" width="600"><br></div> 
-Figure: Structure of the optic nerve head. The region enclosed by the green dotted circle is the optic disc (OD); the central bright zone enclosed by the blue dotted circle is the optic cup (OC); and the region between them is the neuroretinal rim. The vertical cup to disc ratio (CDR) is calculated by the ratio of vertical cup diameter (VCD) to vertical disc diameter (VDD), which plays an important role in the screening and diagnosis of glaucoma. PPA: Peripapillary Atrophy. <br>
+<img src="sub_img/cover_CDR.jpg" border="0" width="500"><br></div> 
+Figure: Structure of the optic nerve head. The vertical cup to disc ratio (CDR) is calculated by the ratio of vertical cup diameter (VCD) to vertical disc diameter (VDD), which plays an important role in the screening and diagnosis of glaucoma. <br>
+
+<br>
+
+<h4>MNet: Multi-label Deep Network</h4>
+
+<p>In this work, we proposed a deep learning architecture, named M-Net, which solves the OD and OC segmentation jointly in a one-stage multi-label system. The proposed M-Net mainly consists of multi-scale input layer, U-shape convolutional network, side-output layer, and multi-label loss function. The multi-scale input layer constructs an image pyramid to achieve multiple level receptive field sizes. The U-shape convolutional network is employed as the main body network structure to learn the rich hierarchical representation, while the side-output layer acts as an early classifier that produces a companion local prediction map for different scale layers. Finally, a multi-label loss function is proposed to generate the final segmentation map. </p> <br>
+
+<div style="text-align: center; display: block; margin-right: auto;">
+<img src="sub_img/framework_MNet.jpg" border="0" width="800"><br></div> 
+Figure: Our M-Net architecture consists of multi-scale input layer, U-shape convolutional network, side-output layer, and multi-label loss function.<br>
 
 <br>
 <hr />
 
-<h4>Segmentation based method:</h4>
-    
-<p>Huazhu Fu, Jun Cheng, Yanwu Xu, Damon Wing Kee Wong, Jiang Liu, and Xiaochun Cao, <a href="https://arxiv.org/abs/1801.00926" class="user-mention" target="_blank"><strong>"Joint Optic Disc and Cup Segmentation Based on Multi-label Deep Network and Polar Transformation"</strong></a>, in <em>IEEE Transactions on Medical Imaging (TMI)</em>, 2018. <br>
-</p>
+<h4>Paper:</h4>
+
+<ol>
+
+<li> <strong>Huazhu Fu</strong>,  Jun Cheng, Yanwu Xu, Damon Wing Kee Wong, Jiang Liu, and Xiaochun Cao,  <a href="https://arxiv.org/abs/1801.00926" target="_blank"><titleP>"Joint Optic Disc and Cup Segmentation Based on Multi-label Deep Network and Polar Transformation"</titleP></a>, 
+<em>IEEE Transactions on Medical Imaging (TMI)</em>, 2018. Accepted. DOI: 10.1109/TMI.2018.2791488 <br> 
+<font color="#ff0000">Code is coming soon</font> </li>
+
+</ol>
 
 <br>
 <hr />
 
 <h4>Related Works:</h4>
 
-<li><strong>"DeepVessel: Retinal Vessel Segmentation via Deep Learning and Conditional Random Field"</strong>, <br>
-<strong>Huazhu Fu</strong>, Yanwu Xu, Stephen Lin, Damon Wing Kee Wong, Jiang Liu,  <br>
-in <em>International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)</em>, 2016, pp. 132-139. <br>
-<a href="http://dx.doi.org/10.1007/978-3-319-46723-8_16" class="user-mention" target="_blank">[PDF]</a> <a href="proj_deepvessel.html"><font color="#ff0000">[Project]</font></a></li>
+<ol>
 
-<li> <strong>"Segmentation and Quantification for Angle-Closure Glaucoma Assessment in Anterior Segment OCT"</strong>, <br>
-<strong>Huazhu Fu</strong>,  Yanwu Xu, Stephen Lin, Xiaoqin Zhang, Damon Wing Kee Wong, Jiang Liu, Alejandro F. Frangi,  Mani Baskaran, Tin Aung, <br>
+<li>Huazhu Fu, Yanwu Xu, Stephen Lin, Damon Wing Kee Wong, Jiang Liu,  <strong>"DeepVessel: Retinal Vessel Segmentation via Deep Learning and Conditional Random Field"</strong>,  
+in <em>International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)</em>, 2016, pp. 132-139. <br>
+<a href="http://dx.doi.org/10.1007/978-3-319-46723-8_16" class="user-mention" target="_blank"><font color="#ff0000">[PDF]</font></a> <a href="proj_deepvessel.html"><font color="#ff0000">[Project]</font></a></li>
+
+<li>Huazhu Fu,  Yanwu Xu, Stephen Lin, Xiaoqin Zhang, Damon Wing Kee Wong, Jiang Liu, Alejandro F. Frangi,  Mani Baskaran, Tin Aung,  <strong>"Segmentation and Quantification for Angle-Closure Glaucoma Assessment in Anterior Segment OCT"</strong>,  
 <em>IEEE Transactions on Medical Imaging (TMI)</em>, vol. 36, no. 9, pp. 1930-1938, 2017.  <br> 
-<a href="https://doi.org/10.1109/TMI.2017.2703147" target="_blank">[PDF]</a> <a href="proj_glaucoma_asoct.html" target="_blank"><font color="#ff0000">[Project]</font></a></li>
+<a href="https://doi.org/10.1109/TMI.2017.2703147" target="_blank"><font color="#ff0000">[PDF]</font></a> <a href="proj_glaucoma_asoct.html" target="_blank"><font color="#ff0000">[Project]</font></a></li>
+
+</ol>
 
 <br>
 
