@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700italic,700);
 
 body {
-  background-color: #F1FAFA;
+  background-color: #F9FAFA;
   padding:30px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 Helvetica, Arial, sans-serif;
   color:#000;
   font-weight:400;
 }
@@ -46,7 +46,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#28b;
+  color:#3A6AFF;
   text-decoration:none;
 }
 
