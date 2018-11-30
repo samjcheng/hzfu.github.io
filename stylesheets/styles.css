@@ -3,7 +3,7 @@
 body {
   background-color: #F9FAFA;
   padding:30px;
-  font: 14px/1.5 Helvetica, Arial, sans-serif;
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
   color:#000;
   font-weight:400;
 }
@@ -180,8 +180,7 @@ header ul a strong {
 }
 
 section {
-  width:820px;
-  float:right;
+  float:left;
   padding-bottom:50px;
 }
 
