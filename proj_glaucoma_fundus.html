@@ -28,7 +28,7 @@ Glaucoma is a chronic eye disease that leads to irreversible vision loss. Since 
 <br><br>
 
 <div style="text-align: center; display: block; margin-right: auto;">
-<img src="sub_img/cover_CDR.jpg" border="0" width="500"><br></div> 
+<img src="sub_img/cover_CDR.jpg" border="0" width="400"><br></div> 
 Figure: Structure of the optic nerve head. The vertical cup to disc ratio (CDR) is calculated by the ratio of vertical cup diameter (VCD) to vertical disc diameter (VDD), which plays an important role in the screening and diagnosis of glaucoma. <br>
 
 <br>
@@ -49,7 +49,7 @@ Huazhu Fu,  Jun Cheng, Yanwu Xu, Damon Wing Kee Wong, Jiang Liu, and Xiaochun Ca
 <br><br>
 
 <div style="text-align: center; display: block; margin-right: auto;">
-<img src="sub_img/framework_MNet.jpg" border="0" width="800"><br></div> 
+<img src="sub_img/framework_MNet.jpg" border="0" width="600"><br></div> 
 Figure: Our M-Net architecture consists of multi-scale input layer, U-shape convolutional network, side-output layer, and multi-label loss function.<br>
 
 <br>
@@ -70,8 +70,21 @@ Huazhu Fu,  Jun Cheng, Yanwu Xu, Changqing Zhang, Damon Wing Kee Wong, Jiang Liu
 <br><br>
 
 <div style="text-align: center; display: block; margin-right: auto;">
-<img src="sub_img/framework_DENet.jpg" border="0" width="800"><br></div> 
+<img src="sub_img/framework_DENet.jpg" border="0" width="600"><br></div> 
 Figure: Architecture of our DENet, which contains four streams: global image stream produces the result based on the global fundus image; the segmentation guided network localizes the optic disc region and generates a detection output embedded the disc-segmentation representation; disc region stream works on disc region cropped by disc segmentation map from segmentation-guided network; disc polar stream transfers the disc region image into the polar coordinate system. The combination of these four streams is fused as the final glaucoma screening result.
+<br>
+
+<br>
+<hr />
+
+<h3>Dataset:</h3>
+
+Due to the clinical policy, the ORIGA, SCES, and SINDI datasets cannot be released. <br>
+ 
+However, we organized the <strong>REFUGE: Retinal Fundus Glaucoma Challenge</strong> in conjunction with the MICCAI-OMIA Workshop 2018, including disc/cup segmentation, glaucoma screening, and localization of fovea tasks. This challenge provided 1200 fundus images (400 training + 400 validation + 400 test) with pixel labels. If you are interested, you can register and download dataset from: [<a href="https://refuge.grand-challenge.org/home/" target="_blank"><font color="#E74C3C"><ud2>Link</ud2></font></a>]
+
+ 
+
 <br>
 
 <br>
