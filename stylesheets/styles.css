@@ -16,6 +16,10 @@ titleP {
 ud {
   text-decoration: underline;
 }
+new {
+  color:#E74C3C;
+  font-weight:700;
+}
 ud2 {
   text-decoration: underline;
 }
