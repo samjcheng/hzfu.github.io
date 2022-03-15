@@ -1,0 +1,29 @@
+a:link {
+  color: #75A3D1;
+  background-color: transparent; 
+}
+a:visited {
+  color: #75A3D1;
+  background-color: transparent; 
+}
+a:hover {
+  color: #cc0000;
+  background-color: transparent; 
+}
+a:active {
+  color: #75A3D1;
+  background-color: transparent; 
+}
+highcolor{
+  color: #F3843E;
+  background-color: transparent; 
+}
+
+/* body{ 
+  font-family: Helvetica, Tahoma, Arial; 
+  width: 1080px; 
+  margin: 0 auto; 
+  line-height:150%;
+  color: #F2F2F3;
+  background-color: #333333; 
+} */
